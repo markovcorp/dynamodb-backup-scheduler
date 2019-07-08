@@ -234,7 +234,7 @@
       "ScheduledEvent": {
           "Properties": {
               "Description": "CloudWatch event to trigger lambda SG function",
-              "ScheduleExpression": "rate(1 day)",
+              "ScheduleExpression": "cron(0 9 * * ? *)",
               "State": "ENABLED",
               "Targets": [
                   {
